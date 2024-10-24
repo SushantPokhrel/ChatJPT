@@ -31,22 +31,18 @@
 body {
   background: var(--primary-color);
 }
-.chat-list {
-  min-height: 400px;
-  padding: 1em 4em;
-  text-align: center;
-}
+
 h3 {
   color: white;
-  text-decoration: underline;
+  font-weight: 400;
 }
 .chat-list h3 {
   text-align: right;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-size: 30px;
 }
 .chat-list p{
-  border-top: 1px solid rgb(188, 188, 188);
+  font-size: 15px;
 }
 .header,
 .chat-list .message,
@@ -139,6 +135,8 @@ body.hide-header .header {
 }
 
 .chat-list {
+  max-width: 80%;
+  margin: auto;
   padding: 2rem 1rem 12rem;
   max-height: 100vh;
   overflow-y: auto;
