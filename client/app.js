@@ -1,5 +1,5 @@
 // const api_key = "";
-const API_URL = `http://localhost:3000/api/text`;
+const API_URL = `https://chatjpt-a097.onrender.com/api/text`;
 // please do not misuse this apiKey.
 const input = document.querySelector(".typing-input");
 const submit_btn = document.querySelector("#send-message-button");
@@ -33,7 +33,7 @@ async function fetchRequest(prompt) {
     console.log(response);
     const data = await response.json();
     console.log(data);
-    const {message} = data;
+    const { message } = data;
     // console.log(data.candidates[0].content.parts[0].text);
     result = message;
     if (result) {
